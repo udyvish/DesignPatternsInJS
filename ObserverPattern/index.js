@@ -19,5 +19,7 @@ NotificationService.prototype._msg = 'Notifying';
 task1.addObserver(LoggingService.update);
 task1.addObserver(NotificationService.update);
 task1.addObserver(AuditingService.update);
-
+task1.save();
+console.log('*'.repeat(50));
+task1.removeObserver(LoggingService.update);
 task1.save();
