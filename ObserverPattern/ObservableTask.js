@@ -15,7 +15,7 @@ class ObservableTask extends Task {
         }
     }
     save() {
-        Task.prototype.save.call(this);
+        super.save(this);
         this.notify(this);
     }
 }
