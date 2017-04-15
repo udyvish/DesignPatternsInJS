@@ -1,10 +1,7 @@
 module.exports = class NotificationService {
-    constructor() {
-        this._msg = 'Notifying users';
-    }
-    update(task) {
+    static update(task) {
         task._users.forEach((elem) => {
-            console.log(`${this._msg} ${elem} for the task ${tas._name}`);
+            console.log(`${NotificationService.prototype._msg} ${elem} for the task ${task._name}`);
         });
     }
 };

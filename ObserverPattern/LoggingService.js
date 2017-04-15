@@ -1,8 +1,5 @@
 module.exports = class LoggingService {
-    constructor() {
-        this._msg = 'Logging task';
-    }
-    update(task) {
-        console.log(`${this._msg} ${tas._name}`);
+    static update(task) {
+        console.log(`${LoggingService.prototype._msg} ${task._name}`);
     }
 };
