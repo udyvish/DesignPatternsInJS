@@ -14,7 +14,8 @@ class UrgentTask extends Task {
     }
     save() {
         this.notify(this._notification);
-        Task.prototype.save.call(this);
+        //Task.prototype.save.call(this);
+        super.save(this);
     }
 }
 
